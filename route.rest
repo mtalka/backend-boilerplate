@@ -1,0 +1,28 @@
+GET http://localhost:9001/posts
+
+###
+
+GET http://localhost:9001/posts/5e5c2c9620b3cf22689f57b5
+
+###
+
+POST http://localhost:9001/posts
+Content-Type: application/json
+
+{
+    "title": "Vituttaa",
+    "text": "Kärttyiset hurjastelevat kuskit"
+}
+
+###
+
+PATCH http://localhost:9001/posts/5e5c2c6620b3cf22689f57b3
+Content-Type: application/json
+
+{
+    "title": "Harmittaa"
+}
+
+###
+
+DELETE http://localhost:9001/posts/5e5c2c9620b3cf22689f57b5
