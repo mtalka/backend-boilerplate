@@ -9,6 +9,16 @@ const postSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    city: {
+        type: String,
+        enum: ["Helsinki", "Turku"]
+    },
+    line: {
+        type: String
+    },
+    happeningTime: {
+        type: Date
+    },
     date: {
         type: Date,
         required: true,

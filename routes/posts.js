@@ -22,7 +22,9 @@ router.get("/:id", getPost, (req, res) => {
 router.post("/", async (req, res) => {
     const post = new Post({
         title: req.body.title,
-        text: req.body.text
+        text: req.body.text,
+        city: req.body.city,
+        line: req.body.line
     });
 
     try {
